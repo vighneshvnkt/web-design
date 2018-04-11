@@ -8,6 +8,10 @@ Used JavaScript for calculating test scores
 Used PHP to send emails
 ```
 
+## Running the example
+
+Run the index3.html file after cloning the project in XAMPP server
+
 ## Authors
 
 * **Vighnesh Venkatakrishnan**
