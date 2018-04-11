@@ -1,0 +1,130 @@
+<html>
+<head>
+<script>
+function validator(){
+var i=0;
+var k;
+var count;
+var score=0;
+var n=myform.length-1;
+
+
+for(k=0;k<n/4;k++)   //for question 1 then 2..3..4..n
+{
+
+for(count=0;count<4;count++)  // 4 optn for each question
+{
+ var j=document.myform.elements[i];
+ if(j.checked && j.value == 4)
+ score++;
+ i++;
+}
+}
+alert("YOUR SCORE ="+score);
+}
+</script>
+</head>
+
+
+<body oncontextmenu="return false">
+<form name="myform">
+<strong><center>TEST 1</center></strong>
+<br><br>
+1>If the integer a is a multiple of 6, the integer b is a multiple of 3, and a > b >0, <br>then 
+which of the following integers must be a<sup>2</sup> - b<sup>2</sup> multiple of ?
+<br>
+<input type="radio" name="a" value="1"/>6<br>
+<input type="radio" name="a" value="1"/>8<br>
+<input type="radio" name="a" value="4"/>9<br>    <!--correct ans-->
+<input type="radio" name="a" value="1"/>10<br>
+
+<br><br>
+2>If a sweater sells for $48 after a 25 percent markdown, what was its original price?<br>
+<input type="radio" name="b" value="1"/>56$<br>
+<input type="radio" name="b" value="1"/>60$<br> 	
+<input type="radio" name="b" value="4"/>64$<br>    <!--correct ans-->
+<input type="radio" name="b" value="1"/>68$<br>
+
+
+<br><br>
+3>If there are 14 women and 10 men employed in a certain office, what is the 
+probability <br>that one employee picked at random will
+be a woman?
+<br>
+<input type="radio" name="c" value="1"/>7/5<br>
+<input type="radio" name="c" value="1"/>7/4<br> 	
+<input type="radio" name="c" value="1"/>7/6<br>    
+<input type="radio" name="c" value="4"/>7/12<br>	<!--correct ans-->
+
+<br><br>
+4>Maria takes 9 days to complete a piece of work, John takes 3 days to do the same work and Linda<br>
+completes it in 6 days, how long would it take if all three of them work together to complete it?
+<br>
+<input type="radio" name="d" value="1"/>0.41<br>
+<input type="radio" name="d" value="4"/>1.63<br> 	<!--correct ans-->
+<input type="radio" name="d" value="1"/>1.23<br>    
+<input type="radio" name="d" value="1"/>1.78<br>	
+
+<br><br>
+5>If 50 is 25% of a number,then what is 58% of same number ?
+<br>
+<input type="radio" name="e" value="4"/>116<br><!--correct ans-->
+<input type="radio" name="e" value="1"/>95<br> 	
+<input type="radio" name="e" value="1"/>98<br>    
+<input type="radio" name="e" value="1"/>119<br>	
+
+<br><br>
+6>Which of the following is even if n is odd? I) (n * n) - 1 II) 2n - 1 III) 3n + 1
+<br>
+<input type="radio" name="f" value="1"/> I only<br>
+<input type="radio" name="f" value="4"/> I and III<br> 	<!--correct ans-->
+<input type="radio" name="f" value="1"/>III only<br>    
+<input type="radio" name="f" value="1"/>I ,II and III<br>	
+
+<br><br>
+7>If (a<sup>2</sup>)(b) is an integer which of the following must be an integer? 
+<br>
+<input type="radio" name="g" value="1"/>b<sup>2</sup><br>
+<input type="radio" name="g" value="1"/>a<br> 	
+<input type="radio" name="g" value="1"/>b<br>    
+<input type="radio" name="g" value="4">None of the above<br>	<!--correct ans-->
+
+<br><br>
+8>Two sides of a triangle have length 6 and 8. Which of the following are possible areas of the triangle? <br>
+I. 2 <br>
+II. 12 <br>
+III. 24
+<br>
+<input type="radio" name="h" value="1"/>II and III only<br>
+<input type="radio" name="h" value="1"/>I and III only<br> 	
+<input type="radio" name="h" value="4"/>I, II, and III<br>  <!--correct ans-->   
+<input type="radio" name="h" value="1"/>I only<br>	
+
+<br><br>
+9> x > 0 <br>
+Column 1: 10x <br>
+Column 2: 10/x <br>
+
+<br>
+<input type="radio" name="i" value="1"/>The quantity in column 1 is greater <br>
+<input type="radio" name="i" value="1"/>The quantity in column 2 is greater<br> 	
+<input type="radio" name="i" value="1"/>The two quantities are equal <br>    
+<input type="radio" name="i" value="4"/>The relationship cannot be determined from the information given below<br>	<!--correct ans-->
+
+<br><br>
+10>P and q are primes <br>
+P + q = 12 <br>
+Column A: P <br>
+Column B: 8 
+
+<br>
+<input type="radio" name="j" value="1"/>The quantity in column 1 is greater <br>
+<input type="radio" name="j" value="4"/>The quantity in column 2 is greater <br> <!--correct ans-->	
+<input type="radio" name="j" value="1"/>The two quantities are equal <br>    
+<input type="radio" name="j" value="1"/>The relationship cannot be determined from the information given below<br>	
+<br><br>
+<strong><center><input type="button" name="check" onClick="validator()" value="CHECK"/>
+</center></strong>
+</form>
+</body>
+</html>
